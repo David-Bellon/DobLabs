@@ -1,0 +1,22 @@
+body{
+    background-color: rgb(206, 141, 20);
+}
+
+.top-menu{
+    height: 10px;
+}
+
+#enableEthereumButton{
+    float: right;
+    background-color: rgb(255, 188, 63);
+    width: 230px;
+    height: 40px;
+    margin-top: 25px;
+    margin-right: 40px;
+    border-radius: 10px;
+}
+
+#enableEthereumButton:hover{
+    background-color: grey;
+    cursor: pointer;
+}
