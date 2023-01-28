@@ -67,10 +67,32 @@ body{
     padding-right: 4px;
 }
 
-.asset {
+.asset{
     width: 100%;
     height: 120px;
     border: 2px solid white;
-    margin-top: 30px;
+    margin-top: 55px;
     background-color: rgb(255, 165, 61);
+}
+
+.logo-asset{
+    float: left;
+    height: 100%;
+    width: 13%;
+}
+
+.price-asset{
+    position: inherit;
+    float: left;
+    height: 100%;
+    width: 20%;
+    text-align: center;
+    margin-top: 49px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+
+.asset img {
+    width: 100%;
+    height: 100%;
 }

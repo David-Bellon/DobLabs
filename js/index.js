@@ -6,7 +6,6 @@ if (typeof window.ethereum !== 'undefined') {
 
 var url = new URL("https://api4.binance.com/api/v3/ticker/price");
 const ethereumButton = document.getElementById("enableEthereumButton");
-var eth_id = document.getElementById("eth");
 var user_account;
 
 ethereumButton.addEventListener('click', () => {
@@ -24,10 +23,11 @@ async function getAccount() {
 
 setInterval(function() {
   let params = {symbol: "ETHUSDT"};
+  var eth_id = document.getElementById("eth").getElementsByClassName("price-asset")[0];
   url.search = new URLSearchParams(params).toString();
   fetch(url).then((response) => {
     response.json().then((myjson) => {
-      eth_id.innerHTML = myjson["price"];
+      eth_id.innerHTML = "ETH/USD: " + String(Number(myjson["price"]).toFixed(2)) + "$";
     });
   });
 }, 1000);
