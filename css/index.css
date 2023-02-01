@@ -55,10 +55,6 @@ body{
     box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
 }
 
-.chart-view{
-    margin-top: 50px;
-}
-
 .list-assets{
     width: 60%;
     height: auto;
@@ -78,14 +74,14 @@ body{
 .logo-asset{
     float: left;
     height: 100%;
-    width: 13%;
+    width: 14%;
 }
 
 .price-asset{
     position: inherit;
     float: left;
     height: 100%;
-    width: 20%;
+    width: 21%;
     text-align: center;
     margin-top: 49px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -96,7 +92,7 @@ body{
     position: inherit;
     float: left;
     height: 100%;
-    width: 20%;
+    width: 21%;
     text-align: center;
     margin-top: 49px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -104,7 +100,37 @@ body{
     color: green;
 }
 
+.trade-link{
+    position: inherit;
+    float: left;
+    height: 50%;
+    width: 21%;
+    margin-left: 40px;
+    background-color: rgb(37, 37, 37);
+    color: white;
+    text-align: center;
+    margin-top: 30px;
+    border-radius: 24px;
+    text-decoration: none;
+}
+
+.trade-link div{
+    margin-top: 16px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+
+.trade-link:hover{
+    background-color: rgb(59, 59, 59);
+}
+
 .asset img {
     width: 100%;
     height: 100%;
+}
+
+.market-text{
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 40px;
 }

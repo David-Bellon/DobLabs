@@ -2,6 +2,7 @@ const web3 = new Web3(Web3.givenProvider);
 const tickets = ["btcusdt", "ethusdt"]
 if (typeof window.ethereum !== 'undefined') {
     console.log('MetaMask is installed!');
+    getAccount();
   }
 
 
@@ -34,7 +35,7 @@ setInterval(function() {
         price_class.innerHTML = String(tickets[i].toUpperCase() + ":  " + Number(myjson[i]["lastPrice"]).toFixed(3) + "$");
         if (parseFloat(myjson[i]["priceChangePercent"]) < 0){
           change_per.style.color = "red";
-          change_per.innerHTML = String("24H % Change:  " + "-" + myjson[i]["priceChangePercent"]) + "%";
+          change_per.innerHTML = String("24H % Change:  " + myjson[i]["priceChangePercent"]) + "%";
         }
         else{
           change_per.style.color = "green";
